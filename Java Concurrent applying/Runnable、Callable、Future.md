@@ -41,8 +41,8 @@ public interface Future<V> {
         throws InterruptedException, ExecutionException, TimeoutException;
 }
 ```
-<br/>
-get（）方法的行为取决于任务的状态（尚未开始，正在运行，已完成）。
+
+　　get（）方法的行为取决于任务的状态（尚未开始，正在运行，已完成）。
 
 - 如果任务完成就返回结果。
 - 如果任务没完成，那么get将阻塞直到任务完成。
