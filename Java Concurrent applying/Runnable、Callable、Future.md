@@ -49,6 +49,9 @@ public interface Future<V> {
 - 如果任务抛出异常，那么get将抛出ExecutionException。
 - 如果任务被取消，那么get将抛出CancellationException。
 
+　　参考书籍：《Java 并发编程实战》
+
+
 
 
 
