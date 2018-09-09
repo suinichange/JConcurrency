@@ -1,10 +1,11 @@
-　　Runnnable作为线程任务实现的基本形式之一，具有较大的局限性，它不能返回一个值或者抛出一个受检查的异常。<br/>
+　　Runnnable作为线程任务实现的基本形式之一，具有较大的局限性，它不能返回一个值或者抛出一个受检查的异常。
+
 ```java
 public interface Runnable {
     public abstract void run();
 }
 ```
-　　但是许多任务实际上都是存在延迟计算的，比如数据库的查询，从网络获取资源，或者计算某个复杂功能。此时我们可以使用Callable。它认为主入口点（即 call）将返回一个值，并可能抛出异常。<br/>
+　　但是许多任务实际上都是存在延迟计算的，比如数据库的查询，从网络获取资源，或者计算某个复杂功能。此时我们可以使用Callable。它认为主入口点（即 call）将返回一个值，并可能抛出异常。
 
 ```java
 public interface Callable<V> {
@@ -16,7 +17,8 @@ public interface Callable<V> {
     V call() throws Exception;
 }
 ```
-　　Future 表示一个任务的执行周期，并提供了相应的方法来判断任务是否已经完成或取消，以及获取任务的结果。<br/>
+　　Future 表示一个任务的执行周期，并提供了相应的方法来判断任务是否已经完成或取消，以及获取任务的结果。
+
 
 ```java
 public interface Future<V> {

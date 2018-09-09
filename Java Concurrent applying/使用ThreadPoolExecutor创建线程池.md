@@ -103,7 +103,7 @@ RejectedExecutionHandler：饱和策略，当队列和线程池都满时，该�
 - TimeUnit.MICROSECONDS（微秒）
 - TimeUnit.NANOSECONDS（纳秒，千分之一微秒）
 
-　　参考书籍：《Java 并发编程实战》
+　　参考书籍：《Java 并发编程艺术》
 
 
 
