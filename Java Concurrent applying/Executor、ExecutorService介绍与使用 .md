@@ -26,7 +26,7 @@ public class ThreadPerTaskExecutor implements Executor {
 
 　　因此Executor扩展了ExecutorService接口，并添加了一些用于生命周期的管理方法去管理Executor的生命周期。
 
-## ExecutorService介绍
+## ExecutorService介绍和使用
 
 ```java
 public interface ExecutorService extends Executor {
